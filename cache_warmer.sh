@@ -4,17 +4,13 @@
 # The function takes a URL as argument.
 # Start with a sitemap file URL to recursively crawl all the links in the sitemap file.
  
+# For Mac OS
 # Needs: brew install grep
 
 
 crawl() {
     # The URL is passed as argument.
     URL=$1
-
-    # Colors for the output
-    RED="\e[41m"
-    GREEN="\e[42m"
-    ENDCOLOR="\e[0m"
 
     # Check if the URL is a sitemap file.
     # If so, curl all the locations/loc's in the sitemap file.
